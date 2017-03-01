@@ -6,14 +6,15 @@
 //  Copyright © 2017 Abdulaziz Ismail. All rights reserved.
 //
 
+
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
     
     var suit = "a"
     var cardNumber = 0
     var cardPickedName: String = "a"
-    var printImageOnce = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +41,19 @@ class ViewController: UIViewController {
         self.view.addGestureRecognizer(longPressRecognizer)
     }
     
+
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                print(suit, cardNumber)
+
+                
                 if suit == "a"{
                     suit = "shamrock"
                 }else {
                     cardNumber += 2
                 }
+                print(suit, cardNumber)
                 
             case UISwipeGestureRecognizerDirection.down:
                 print("Swiped down")
@@ -93,13 +97,21 @@ class ViewController: UIViewController {
     
     @IBAction func longPressed(sender: UILongPressGestureRecognizer)
     {
-        if printImageOnce == false{
+        if suit != "a" && cardNumber < 13{
+            
+        if (sender.state == UIGestureRecognizerState.ended) {
+            print("Long press Ended")
+            suit = "a"
+            cardNumber = 0
+        } else if (sender.state == UIGestureRecognizerState.began) {
+            print("Long press detected.")
             cardPickedName = suit + String(cardNumber)
-            //let cardPicked = UIImage(named: cardPickedName)
+            let cardPicked = UIImage(named: cardPickedName)
             print(cardPickedName)
-            //UIImageWriteToSavedPhotosAlbum(cardPicked!, nil, nil, nil);
-            printImageOnce = true
-            //Different code
+            UIImageWriteToSavedPhotosAlbum(cardPicked!, nil, nil, nil);
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
+        
     }
 
 
