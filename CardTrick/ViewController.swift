@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var suit = "a"
+    var cardNumber = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +39,36 @@ class ViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                print("Swiped right")
-               // UIImageWriteToSavedPhotosAlbum(#imageLiteral(resourceName: "onec.png"), nil, nil, nil);
+                print(suit, cardNumber)
+                if suit == "a"{
+                    suit = "shamrock"
+                }else {
+                    cardNumber += 2
+                }
+                
             case UISwipeGestureRecognizerDirection.down:
                 print("Swiped down")
-               // UIImageWriteToSavedPhotosAlbum(#imageLiteral(resourceName: "twoc.png"), nil, nil, nil);
+                if suit == "a"{
+                    suit = "diamond"
+                }else {
+                    cardNumber += 5
+                }
+                
             case UISwipeGestureRecognizerDirection.left:
                 print("Swiped left")
-             //   UIImageWriteToSavedPhotosAlbum(#imageLiteral(resourceName: "threec.png"), nil, nil, nil);
+                if suit == "a"{
+                    suit = "spade"
+                }else {
+                    cardNumber += 10
+                }
+           
             case UISwipeGestureRecognizerDirection.up:
                 print("Swiped up")
+                if suit == "a"{
+                    suit = "heart"
+                }else {
+                    cardNumber += 1
+                }
              //   UIImageWriteToSavedPhotosAlbum(#imageLiteral(resourceName: "fourc.png"), nil, nil, nil);
             default:
                 break
