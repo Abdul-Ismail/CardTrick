@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     var suit = "a"
     var cardNumber = 0
+    var cardPickedName: String = "a"
+    var printImageOnce = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,9 @@ class ViewController: UIViewController {
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
+        
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressed))
+        self.view.addGestureRecognizer(longPressRecognizer)
     }
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
@@ -69,7 +74,7 @@ class ViewController: UIViewController {
                 }else {
                     cardNumber += 1
                 }
-             //   UIImageWriteToSavedPhotosAlbum(#imageLiteral(resourceName: "fourc.png"), nil, nil, nil);
+
             default:
                 break
             }
@@ -85,7 +90,19 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func longPressed(sender: UILongPressGestureRecognizer)
+    {
+        if printImageOnce == false{
+            cardPickedName = suit + String(cardNumber)
+            //let cardPicked = UIImage(named: cardPickedName)
+            print(cardPickedName)
+            //UIImageWriteToSavedPhotosAlbum(cardPicked!, nil, nil, nil);
+            printImageOnce = true
+            //Different code
+    }
 
 
 }
 
+}
