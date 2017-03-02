@@ -39,6 +39,10 @@ class ViewController: UIViewController {
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressed))
         self.view.addGestureRecognizer(longPressRecognizer)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.doubleTapped))
+        tap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tap)
     }
     
 
@@ -46,8 +50,8 @@ class ViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
 
-                
                 if suit == "a"{
                     suit = "shamrock"
                 }else {
@@ -56,6 +60,7 @@ class ViewController: UIViewController {
                 print(suit, cardNumber)
                 
             case UISwipeGestureRecognizerDirection.down:
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 print("Swiped down")
                 if suit == "a"{
                     suit = "diamond"
@@ -64,6 +69,7 @@ class ViewController: UIViewController {
                 }
                 
             case UISwipeGestureRecognizerDirection.left:
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 print("Swiped left")
                 if suit == "a"{
                     suit = "spade"
@@ -72,6 +78,7 @@ class ViewController: UIViewController {
                 }
            
             case UISwipeGestureRecognizerDirection.up:
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 print("Swiped up")
                 if suit == "a"{
                     suit = "heart"
@@ -97,13 +104,9 @@ class ViewController: UIViewController {
     
     @IBAction func longPressed(sender: UILongPressGestureRecognizer)
     {
-        if suit != "a" && cardNumber < 13{
-            
-        if (sender.state == UIGestureRecognizerState.ended) {
-            print("Long press Ended")
-            suit = "a"
-            cardNumber = 0
-        } else if (sender.state == UIGestureRecognizerState.began) {
+        if suit != "a" && cardNumber < 14 && cardNumber > 0{
+       
+        if (sender.state == UIGestureRecognizerState.began) {
             print("Long press detected.")
             cardPickedName = suit + String(cardNumber)
             let cardPicked = UIImage(named: cardPickedName)
@@ -113,8 +116,22 @@ class ViewController: UIViewController {
         }
         
     }
-
+        
+        
+        if (sender.state == UIGestureRecognizerState.ended) {
+            print("Long press Ended")
+            suit = "a"
+            cardNumber = 0
+        }
+        
 
 }
+    
+    func doubleTapped() {
+        suit = "a"
+        cardNumber = 0
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+    }
+
 
 }
