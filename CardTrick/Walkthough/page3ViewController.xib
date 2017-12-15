@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="24E-eG-vw3">
-                            <rect key="frame" x="172.5" y="561" width="30" height="6"/>
+                            <rect key="frame" x="172.5" y="541" width="30" height="6"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44y-kC-iYA">
                                     <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
@@ -112,7 +112,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="jKB-c2-Xyx" firstAttribute="bottom" secondItem="24E-eG-vw3" secondAttribute="bottom" constant="100" id="6q1-9y-iIO"/>
+                        <constraint firstItem="jKB-c2-Xyx" firstAttribute="bottom" secondItem="24E-eG-vw3" secondAttribute="bottom" constant="120" id="6q1-9y-iIO"/>
                         <constraint firstItem="fUK-S5-5NH" firstAttribute="top" secondItem="O24-zf-exp" secondAttribute="bottom" constant="10" id="GIJ-Bw-Wwc"/>
                         <constraint firstItem="cd2-Dj-b1X" firstAttribute="top" secondItem="fUK-S5-5NH" secondAttribute="bottom" constant="10" id="Qlo-tv-R6d"/>
                         <constraint firstItem="24E-eG-vw3" firstAttribute="centerX" secondItem="ncU-I5-wML" secondAttribute="centerX" id="bJG-2O-ZUh"/>

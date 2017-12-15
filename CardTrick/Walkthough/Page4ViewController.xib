@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0vf-jh-RDl">
-                            <rect key="frame" x="172.5" y="561" width="30" height="6"/>
+                            <rect key="frame" x="172.5" y="541" width="30" height="6"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4R-GV-9rn">
                                     <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
@@ -80,22 +80,6 @@
                                 </view>
                             </subviews>
                         </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlj-Bm-DmK">
-                            <rect key="frame" x="70" y="583" width="234" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <state key="normal" title="Done"/>
-                            <connections>
-                                <action selector="done_DidTapped:" destination="-1" eventType="touchUpInside" id="Z1B-Ce-vPc"/>
-                            </connections>
-                        </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double tap" translatesAutoresizingMaskIntoConstraints="NO" id="91g-Ek-Ntt">
-                            <rect key="frame" x="125" y="277.5" width="125" height="112"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="112" id="LNC-32-5uo"/>
-                                <constraint firstAttribute="width" constant="125" id="Q3V-Az-mZY"/>
-                            </constraints>
-                        </imageView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="If you make a mistake when swipping you can double tap to reset." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-Nj-3TP">
                             <rect key="frame" x="30" y="182.5" width="315" height="79"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -106,10 +90,27 @@
                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double tap" translatesAutoresizingMaskIntoConstraints="NO" id="91g-Ek-Ntt">
+                            <rect key="frame" x="125" y="277.5" width="125" height="112"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="112" id="LNC-32-5uo"/>
+                                <constraint firstAttribute="width" constant="125" id="Q3V-Az-mZY"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlj-Bm-DmK">
+                            <rect key="frame" x="159" y="572" width="56" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="done_DidTapped:" destination="-1" eventType="touchUpInside" id="Z1B-Ce-vPc"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="0vf-jh-RDl" secondAttribute="bottom" constant="100" id="2hw-WM-x0J"/>
+                        <constraint firstAttribute="bottom" secondItem="0vf-jh-RDl" secondAttribute="bottom" constant="120" id="2hw-WM-x0J"/>
+                        <constraint firstItem="Jlj-Bm-DmK" firstAttribute="centerX" secondItem="XNn-kI-bDQ" secondAttribute="centerX" id="5mY-Ou-6ug"/>
+                        <constraint firstItem="Jlj-Bm-DmK" firstAttribute="top" secondItem="0vf-jh-RDl" secondAttribute="bottom" constant="25" id="9o9-JT-ERg"/>
                         <constraint firstItem="91g-Ek-Ntt" firstAttribute="centerX" secondItem="XNn-kI-bDQ" secondAttribute="centerX" id="Jep-BC-XwF"/>
                         <constraint firstItem="91g-Ek-Ntt" firstAttribute="top" secondItem="Hf7-Nj-3TP" secondAttribute="bottom" constant="16" id="Opk-HB-sIS"/>
                         <constraint firstItem="0vf-jh-RDl" firstAttribute="centerX" secondItem="XNn-kI-bDQ" secondAttribute="centerX" id="PyQ-kB-6Er"/>
