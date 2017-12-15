@@ -24,11 +24,9 @@ class Page4ViewController: UIViewController {
 
     @IBAction func done_DidTapped(_ sender: Any) {
         
-        UserDefaults.standard.set(true, forKey: "firstlaunch")
-        UserDefaults.standard.synchronize();
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! UIViewController
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "practiceVC") as! UIViewController
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = mainVC
         

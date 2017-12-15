@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+        //initialViewController = storyboard.instantiateViewController(withIdentifier: "practiceVC")
+        
         window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()
         

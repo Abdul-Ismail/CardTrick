@@ -28,7 +28,6 @@
 		7B7E9BD51E66E1910004C6C9 /* heart8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA11E66E1910004C6C9 /* heart8.png */; };
 		7B7E9BD61E66E1910004C6C9 /* spade8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA21E66E1910004C6C9 /* spade8.png */; };
 		7B7E9BD71E66E1910004C6C9 /* diamond9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA31E66E1910004C6C9 /* diamond9.png */; };
-		7B7E9BD81E66E1910004C6C9 /* heart9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA41E66E1910004C6C9 /* heart9.png */; };
 		7B7E9BD91E66E1910004C6C9 /* spade9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA51E66E1910004C6C9 /* spade9.png */; };
 		7B7E9BDA1E66E1910004C6C9 /* shamrock10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA61E66E1910004C6C9 /* shamrock10.png */; };
 		7B7E9BDB1E66E1910004C6C9 /* diamond10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BA71E66E1910004C6C9 /* diamond10.png */; };
@@ -74,6 +73,7 @@
 		7B8069BA1FE42E34000A2F22 /* page3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8069B81FE42E34000A2F22 /* page3ViewController.xib */; };
 		7B8069BE1FE4304F000A2F22 /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069BC1FE4304F000A2F22 /* Page4ViewController.swift */; };
 		7B8069BF1FE4304F000A2F22 /* Page4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8069BD1FE4304F000A2F22 /* Page4ViewController.xib */; };
+		7B8069C11FE47FAF000A2F22 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069C01FE47FAF000A2F22 /* PracticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +100,6 @@
 		7B7E9BA11E66E1910004C6C9 /* heart8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart8.png; sourceTree = "<group>"; };
 		7B7E9BA21E66E1910004C6C9 /* spade8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spade8.png; sourceTree = "<group>"; };
 		7B7E9BA31E66E1910004C6C9 /* diamond9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond9.png; sourceTree = "<group>"; };
-		7B7E9BA41E66E1910004C6C9 /* heart9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart9.png; sourceTree = "<group>"; };
 		7B7E9BA51E66E1910004C6C9 /* spade9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spade9.png; sourceTree = "<group>"; };
 		7B7E9BA61E66E1910004C6C9 /* shamrock10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shamrock10.png; sourceTree = "<group>"; };
 		7B7E9BA71E66E1910004C6C9 /* diamond10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond10.png; sourceTree = "<group>"; };
@@ -146,6 +145,7 @@
 		7B8069B81FE42E34000A2F22 /* page3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = page3ViewController.xib; sourceTree = "<group>"; };
 		7B8069BC1FE4304F000A2F22 /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
 		7B8069BD1FE4304F000A2F22 /* Page4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page4ViewController.xib; sourceTree = "<group>"; };
+		7B8069C01FE47FAF000A2F22 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,15 +164,15 @@
 			children = (
 				7B7E9B801E66DB690004C6C9 /* CardTrick */,
 				7B7E9B7F1E66DB690004C6C9 /* Products */,
-				7B7E9B931E66DD750004C6C9 /* mainScreen.png */,
+				7B7E9B9A1E66E1910004C6C9 /* spade5.png */,
 				7B7E9B951E66E1910004C6C9 /* diamond4.png */,
-				7B7E9B961E66E1910004C6C9 /* heart4.png */,
 				7B7E9B971E66E1910004C6C9 /* spade4.png */,
 				7B7E9B981E66E1910004C6C9 /* diamond5.png */,
 				7B7E9B991E66E1910004C6C9 /* heart5.png */,
-				7B7E9B9A1E66E1910004C6C9 /* spade5.png */,
 				7B7E9B9B1E66E1910004C6C9 /* diamond6.png */,
 				7B7E9B9C1E66E1910004C6C9 /* heart6.png */,
+				7B7E9B931E66DD750004C6C9 /* mainScreen.png */,
+				7B7E9B961E66E1910004C6C9 /* heart4.png */,
 				7B7E9B9D1E66E1910004C6C9 /* diamond7.png */,
 				7B7E9B9E1E66E1910004C6C9 /* heart7.png */,
 				7B7E9B9F1E66E1910004C6C9 /* spade7.png */,
@@ -180,7 +180,6 @@
 				7B7E9BA11E66E1910004C6C9 /* heart8.png */,
 				7B7E9BA21E66E1910004C6C9 /* spade8.png */,
 				7B7E9BA31E66E1910004C6C9 /* diamond9.png */,
-				7B7E9BA41E66E1910004C6C9 /* heart9.png */,
 				7B7E9BA51E66E1910004C6C9 /* spade9.png */,
 				7B7E9BA61E66E1910004C6C9 /* shamrock10.png */,
 				7B7E9BA71E66E1910004C6C9 /* diamond10.png */,
@@ -234,9 +233,10 @@
 				7B7E9B811E66DB690004C6C9 /* AppDelegate.swift */,
 				7B7E9B831E66DB690004C6C9 /* ViewController.swift */,
 				7B7E9B851E66DB690004C6C9 /* Main.storyboard */,
+				7B8069C01FE47FAF000A2F22 /* PracticeViewController.swift */,
+				7B7E9B881E66DB690004C6C9 /* Assets.xcassets */,
 				7B8069B11FE41A0F000A2F22 /* WalkthoughViewController.swift */,
 				7B8069BB1FE42E3E000A2F22 /* Walkthough */,
-				7B7E9B881E66DB690004C6C9 /* Assets.xcassets */,
 				7B7E9B8A1E66DB690004C6C9 /* LaunchScreen.storyboard */,
 				7B7E9B8D1E66DB690004C6C9 /* Info.plist */,
 			);
@@ -374,7 +374,6 @@
 				7B7E9BEF1E66E1910004C6C9 /* shamrock3.png in Resources */,
 				7B7E9BEA1E66E1910004C6C9 /* heart1.png in Resources */,
 				7B7E9BE51E66E1910004C6C9 /* heart13.png in Resources */,
-				7B7E9BD81E66E1910004C6C9 /* heart9.png in Resources */,
 				7B7E9BF71E66E1910004C6C9 /* shamrock12.png in Resources */,
 				7B7E9BF91E66E1910004C6C9 /* spade1.png in Resources */,
 				7B7E9BCA1E66E1910004C6C9 /* heart4.png in Resources */,
@@ -389,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8069B51FE41B73000A2F22 /* Page2ViewController.swift in Sources */,
+				7B8069C11FE47FAF000A2F22 /* PracticeViewController.swift in Sources */,
 				7B8069BE1FE4304F000A2F22 /* Page4ViewController.swift in Sources */,
 				7B8069AF1FE419C6000A2F22 /* PageOneViewController.swift in Sources */,
 				7B7E9B841E66DB690004C6C9 /* ViewController.swift in Sources */,

@@ -23,7 +23,6 @@ class WalkthoughViewController: UIViewController {
         self.addChildViewController(Page1)
         self.scrollView.addSubview(Page1.view)
         Page1.didMove(toParentViewController: self)
-
         
         self.addChildViewController(Page2)
         self.scrollView.addSubview(Page2.view)
@@ -53,11 +52,6 @@ class WalkthoughViewController: UIViewController {
         self.scrollView.contentSize = CGSize(width: self.view.frame.width * 4, height: self.view.frame.height)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override var prefersStatusBarHidden: Bool {
         return true
     }

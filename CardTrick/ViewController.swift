@@ -53,7 +53,7 @@ class ViewController: UIViewController {
                 AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
 
                 if suit == "a"{
-                    suit = "shamrock"
+                    suit = "heart"
                 }else {
                     cardNumber += 2
                 }
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
                 AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 print("Swiped up")
                 if suit == "a"{
-                    suit = "heart"
+                    suit = "shamrock"
                 }else {
                     cardNumber += 1
                 }
