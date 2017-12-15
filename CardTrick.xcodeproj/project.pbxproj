@@ -65,6 +65,15 @@
 		7B7E9BFA1E66E1910004C6C9 /* spade2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BC61E66E1910004C6C9 /* spade2.png */; };
 		7B7E9BFB1E66E1910004C6C9 /* spade3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BC71E66E1910004C6C9 /* spade3.png */; };
 		7B7E9BFC1E66E1910004C6C9 /* spade6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E9BC81E66E1910004C6C9 /* spade6.png */; };
+		7B8069AF1FE419C6000A2F22 /* PageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069AD1FE419C6000A2F22 /* PageOneViewController.swift */; };
+		7B8069B01FE419C6000A2F22 /* PageOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8069AE1FE419C6000A2F22 /* PageOneViewController.xib */; };
+		7B8069B21FE41A0F000A2F22 /* WalkthoughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069B11FE41A0F000A2F22 /* WalkthoughViewController.swift */; };
+		7B8069B51FE41B73000A2F22 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069B31FE41B73000A2F22 /* Page2ViewController.swift */; };
+		7B8069B61FE41B73000A2F22 /* Page2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8069B41FE41B73000A2F22 /* Page2ViewController.xib */; };
+		7B8069B91FE42E34000A2F22 /* page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069B71FE42E34000A2F22 /* page3ViewController.swift */; };
+		7B8069BA1FE42E34000A2F22 /* page3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8069B81FE42E34000A2F22 /* page3ViewController.xib */; };
+		7B8069BE1FE4304F000A2F22 /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8069BC1FE4304F000A2F22 /* Page4ViewController.swift */; };
+		7B8069BF1FE4304F000A2F22 /* Page4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8069BD1FE4304F000A2F22 /* Page4ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +137,15 @@
 		7B7E9BC61E66E1910004C6C9 /* spade2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spade2.png; sourceTree = "<group>"; };
 		7B7E9BC71E66E1910004C6C9 /* spade3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spade3.png; sourceTree = "<group>"; };
 		7B7E9BC81E66E1910004C6C9 /* spade6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spade6.png; sourceTree = "<group>"; };
+		7B8069AD1FE419C6000A2F22 /* PageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneViewController.swift; sourceTree = "<group>"; };
+		7B8069AE1FE419C6000A2F22 /* PageOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageOneViewController.xib; sourceTree = "<group>"; };
+		7B8069B11FE41A0F000A2F22 /* WalkthoughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthoughViewController.swift; sourceTree = "<group>"; };
+		7B8069B31FE41B73000A2F22 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		7B8069B41FE41B73000A2F22 /* Page2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page2ViewController.xib; sourceTree = "<group>"; };
+		7B8069B71FE42E34000A2F22 /* page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page3ViewController.swift; sourceTree = "<group>"; };
+		7B8069B81FE42E34000A2F22 /* page3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = page3ViewController.xib; sourceTree = "<group>"; };
+		7B8069BC1FE4304F000A2F22 /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
+		7B8069BD1FE4304F000A2F22 /* Page4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page4ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,11 +234,28 @@
 				7B7E9B811E66DB690004C6C9 /* AppDelegate.swift */,
 				7B7E9B831E66DB690004C6C9 /* ViewController.swift */,
 				7B7E9B851E66DB690004C6C9 /* Main.storyboard */,
+				7B8069B11FE41A0F000A2F22 /* WalkthoughViewController.swift */,
+				7B8069BB1FE42E3E000A2F22 /* Walkthough */,
 				7B7E9B881E66DB690004C6C9 /* Assets.xcassets */,
 				7B7E9B8A1E66DB690004C6C9 /* LaunchScreen.storyboard */,
 				7B7E9B8D1E66DB690004C6C9 /* Info.plist */,
 			);
 			path = CardTrick;
+			sourceTree = "<group>";
+		};
+		7B8069BB1FE42E3E000A2F22 /* Walkthough */ = {
+			isa = PBXGroup;
+			children = (
+				7B8069AD1FE419C6000A2F22 /* PageOneViewController.swift */,
+				7B8069AE1FE419C6000A2F22 /* PageOneViewController.xib */,
+				7B8069B31FE41B73000A2F22 /* Page2ViewController.swift */,
+				7B8069B41FE41B73000A2F22 /* Page2ViewController.xib */,
+				7B8069B71FE42E34000A2F22 /* page3ViewController.swift */,
+				7B8069B81FE42E34000A2F22 /* page3ViewController.xib */,
+				7B8069BC1FE4304F000A2F22 /* Page4ViewController.swift */,
+				7B8069BD1FE4304F000A2F22 /* Page4ViewController.xib */,
+			);
+			path = Walkthough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,13 +329,16 @@
 				7B7E9BE31E66E1910004C6C9 /* spade12.png in Resources */,
 				7B7E9BCC1E66E1910004C6C9 /* diamond5.png in Resources */,
 				7B7E9BE11E66E1910004C6C9 /* diamond12.png in Resources */,
+				7B8069BA1FE42E34000A2F22 /* page3ViewController.xib in Resources */,
 				7B7E9BE21E66E1910004C6C9 /* heart12.png in Resources */,
 				7B7E9BDE1E66E1910004C6C9 /* diamond11.png in Resources */,
 				7B7E9BDF1E66E1910004C6C9 /* heart11.png in Resources */,
+				7B8069B61FE41B73000A2F22 /* Page2ViewController.xib in Resources */,
 				7B7E9BD11E66E1910004C6C9 /* diamond7.png in Resources */,
 				7B7E9BED1E66E1910004C6C9 /* shamrock1.png in Resources */,
 				7B7E9BDC1E66E1910004C6C9 /* heart10.png in Resources */,
 				7B7E9BDB1E66E1910004C6C9 /* diamond10.png in Resources */,
+				7B8069BF1FE4304F000A2F22 /* Page4ViewController.xib in Resources */,
 				7B7E9BD71E66E1910004C6C9 /* diamond9.png in Resources */,
 				7B7E9BC91E66E1910004C6C9 /* diamond4.png in Resources */,
 				7B7E9BD41E66E1910004C6C9 /* diamond8.png in Resources */,
@@ -312,6 +350,7 @@
 				7B7E9BDA1E66E1910004C6C9 /* shamrock10.png in Resources */,
 				7B7E9BCD1E66E1910004C6C9 /* heart5.png in Resources */,
 				7B7E9BDD1E66E1910004C6C9 /* spade10.png in Resources */,
+				7B8069B01FE419C6000A2F22 /* PageOneViewController.xib in Resources */,
 				7B7E9BE61E66E1910004C6C9 /* spade13.png in Resources */,
 				7B7E9BCF1E66E1910004C6C9 /* diamond6.png in Resources */,
 				7B7E9BF31E66E1910004C6C9 /* shamrock7.png in Resources */,
@@ -349,7 +388,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8069B51FE41B73000A2F22 /* Page2ViewController.swift in Sources */,
+				7B8069BE1FE4304F000A2F22 /* Page4ViewController.swift in Sources */,
+				7B8069AF1FE419C6000A2F22 /* PageOneViewController.swift in Sources */,
 				7B7E9B841E66DB690004C6C9 /* ViewController.swift in Sources */,
+				7B8069B91FE42E34000A2F22 /* page3ViewController.swift in Sources */,
+				7B8069B21FE41A0F000A2F22 /* WalkthoughViewController.swift in Sources */,
 				7B7E9B821E66DB690004C6C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

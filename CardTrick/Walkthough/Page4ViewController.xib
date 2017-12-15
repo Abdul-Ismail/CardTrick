@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Page4ViewController" customModule="CardTrick" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNn-kI-bDQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0vf-jh-RDl">
+                            <rect key="frame" x="172.5" y="561" width="30" height="6"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4R-GV-9rn">
+                                    <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="6" id="gmD-TD-aYD"/>
+                                        <constraint firstAttribute="width" constant="6" id="hiB-cP-Rv1"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-OQ-CQ4">
+                                    <rect key="frame" x="8" y="0.0" width="6" height="6"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="6" id="47W-WR-zr8"/>
+                                        <constraint firstAttribute="height" constant="6" id="cq8-WA-Hu6"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKH-Oa-JGv">
+                                    <rect key="frame" x="16" y="0.0" width="6" height="6"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="6" id="kt9-8c-gUG"/>
+                                        <constraint firstAttribute="width" constant="6" id="tjw-Qk-cYx"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avh-FB-8Ez">
+                                    <rect key="frame" x="24" y="0.0" width="6" height="6"/>
+                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="6" id="dvg-kE-gg7"/>
+                                        <constraint firstAttribute="width" constant="6" id="od0-N0-iIy"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlj-Bm-DmK">
+                            <rect key="frame" x="70" y="583" width="234" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="done_DidTapped:" destination="-1" eventType="touchUpInside" id="Z1B-Ce-vPc"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double tap" translatesAutoresizingMaskIntoConstraints="NO" id="91g-Ek-Ntt">
+                            <rect key="frame" x="125" y="277.5" width="125" height="112"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="112" id="LNC-32-5uo"/>
+                                <constraint firstAttribute="width" constant="125" id="Q3V-Az-mZY"/>
+                            </constraints>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="If you make a mistake when swipping you can double tap to reset." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-Nj-3TP">
+                            <rect key="frame" x="30" y="182.5" width="315" height="79"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79" id="OpB-nN-Kmb"/>
+                                <constraint firstAttribute="width" constant="315" id="dIB-Cl-ZEF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0vf-jh-RDl" secondAttribute="bottom" constant="100" id="2hw-WM-x0J"/>
+                        <constraint firstItem="91g-Ek-Ntt" firstAttribute="centerX" secondItem="XNn-kI-bDQ" secondAttribute="centerX" id="Jep-BC-XwF"/>
+                        <constraint firstItem="91g-Ek-Ntt" firstAttribute="top" secondItem="Hf7-Nj-3TP" secondAttribute="bottom" constant="16" id="Opk-HB-sIS"/>
+                        <constraint firstItem="0vf-jh-RDl" firstAttribute="centerX" secondItem="XNn-kI-bDQ" secondAttribute="centerX" id="PyQ-kB-6Er"/>
+                        <constraint firstItem="Hf7-Nj-3TP" firstAttribute="centerX" secondItem="XNn-kI-bDQ" secondAttribute="centerX" id="Zkp-QO-Neb"/>
+                        <constraint firstItem="91g-Ek-Ntt" firstAttribute="centerY" secondItem="XNn-kI-bDQ" secondAttribute="centerY" id="qYo-ug-1a7"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="MUy-wt-C8V"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XNn-kI-bDQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7Jd-ve-FCF"/>
+                <constraint firstItem="XNn-kI-bDQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YEx-bd-xyd"/>
+                <constraint firstItem="XNn-kI-bDQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fMX-NU-wGs"/>
+                <constraint firstItem="XNn-kI-bDQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="irw-RB-xwY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="18.5" y="103.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="double tap" width="512" height="512"/>
+    </resources>
+</document>
