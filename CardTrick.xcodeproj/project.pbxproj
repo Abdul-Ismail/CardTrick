@@ -159,11 +159,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B7E9B751E66DB690004C6C9 = {
+		1402290121FD181B00BB10FD /* cards */ = {
 			isa = PBXGroup;
 			children = (
-				7B7E9B801E66DB690004C6C9 /* CardTrick */,
-				7B7E9B7F1E66DB690004C6C9 /* Products */,
 				7B7E9B9A1E66E1910004C6C9 /* spade5.png */,
 				7B7E9B951E66E1910004C6C9 /* diamond4.png */,
 				7B7E9B971E66E1910004C6C9 /* spade4.png */,
@@ -196,13 +194,6 @@
 				7B7E9BB21E66E1910004C6C9 /* spade13.png */,
 				7B7E9BB31E66E1910004C6C9 /* diamond1.png */,
 				7B7E9BB41E66E1910004C6C9 /* diamond2.png */,
-				7B7E9BB51E66E1910004C6C9 /* diamond3.png */,
-				7B7E9BB61E66E1910004C6C9 /* heart1.png */,
-				7B7E9BB71E66E1910004C6C9 /* heart2.png */,
-				7B7E9BB81E66E1910004C6C9 /* heart3.png */,
-				7B7E9BB91E66E1910004C6C9 /* shamrock1.png */,
-				7B7E9BBA1E66E1910004C6C9 /* shamrock2.png */,
-				7B7E9BBB1E66E1910004C6C9 /* shamrock3.png */,
 				7B7E9BBC1E66E1910004C6C9 /* shamrock4.png */,
 				7B7E9BBD1E66E1910004C6C9 /* shamrock5.png */,
 				7B7E9BBE1E66E1910004C6C9 /* shamrock6.png */,
@@ -216,6 +207,24 @@
 				7B7E9BC61E66E1910004C6C9 /* spade2.png */,
 				7B7E9BC71E66E1910004C6C9 /* spade3.png */,
 				7B7E9BC81E66E1910004C6C9 /* spade6.png */,
+				7B7E9BB51E66E1910004C6C9 /* diamond3.png */,
+				7B7E9BB61E66E1910004C6C9 /* heart1.png */,
+				7B7E9BB71E66E1910004C6C9 /* heart2.png */,
+				7B7E9BB81E66E1910004C6C9 /* heart3.png */,
+				7B7E9BB91E66E1910004C6C9 /* shamrock1.png */,
+				7B7E9BBA1E66E1910004C6C9 /* shamrock2.png */,
+				7B7E9BBB1E66E1910004C6C9 /* shamrock3.png */,
+			);
+			name = cards;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7B7E9B751E66DB690004C6C9 = {
+			isa = PBXGroup;
+			children = (
+				7B7E9B801E66DB690004C6C9 /* CardTrick */,
+				7B7E9B7F1E66DB690004C6C9 /* Products */,
+				1402290121FD181B00BB10FD /* cards */,
 			);
 			sourceTree = "<group>";
 		};
